@@ -1,0 +1,10 @@
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/DSpaceBasicTestConfiguration.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/helpers/stubs/StubbedFieldResolver.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/integration/xoai/PipelineTest.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/stylesheets/AbstractXSLTest.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/stylesheets/QDCXslTest.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/stylesheets/RioxxXslTest.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/support/MatcherBuilder.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/support/XmlMatcherBuilder.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/unit/services/impl/AbstractQueryResolverTest.java
+/home/diracai/Reshwanth_workspace/dspace/source/backend/dspace-oai/src/test/java/org/dspace/xoai/tests/unit/services/impl/solr/DSpaceSolrQueryResolverTest.java

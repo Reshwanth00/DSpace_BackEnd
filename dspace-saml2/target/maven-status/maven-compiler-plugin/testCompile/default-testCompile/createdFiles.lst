@@ -1,0 +1,3 @@
+org/dspace/saml2/DSpaceRelyingPartyRegistrationRepositoryTest.class
+org/dspace/saml2/DSpaceSamlAuthRequestTest.class
+org/dspace/saml2/DSpaceSamlAuthenticationSuccessHandlerTest.class

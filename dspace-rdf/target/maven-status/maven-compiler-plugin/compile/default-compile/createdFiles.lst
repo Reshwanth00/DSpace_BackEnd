@@ -1,0 +1,4 @@
+org/dspace/rdf/providing/DataProviderServlet.class
+org/dspace/rdf/providing/LocalURIRedirectionServlet.class
+org/dspace/app/configuration/RDFWebConfig.class
+org/dspace/utils/DSpaceWebapp.class

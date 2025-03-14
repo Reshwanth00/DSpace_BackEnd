@@ -1,0 +1,5 @@
+org/dspace/saml2/DSpaceSamlAuthenticationFailureHandler.class
+org/dspace/saml2/DSpaceSamlAuthRequest.class
+org/dspace/saml2/DSpaceSamlAuthenticationSuccessHandler.class
+org/dspace/app/configuration/SamlWebSecurityConfiguration.class
+org/dspace/saml2/DSpaceRelyingPartyRegistrationRepository.class
