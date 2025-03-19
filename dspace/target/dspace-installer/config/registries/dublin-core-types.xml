@@ -605,4 +605,60 @@
         <scope_note></scope_note>
     </dc-type>
 
+    <dc-type>
+        <schema>dc</schema>
+        <element>case</element>
+        <qualifier>number</qualifier>
+        <scope_note></scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>case</element>
+        <qualifier>year</qualifier>
+        <scope_note></scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>party</element>
+        <qualifier>firstrespondent</qualifier>
+        <scope_note>First Respondent</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>party</element>
+        <qualifier>firstpetitioner</qualifier>
+        <scope_note>First Petitioner</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>advocate</element>
+        <qualifier>firstpetitioner</qualifier>
+        <scope_note>First Petitioner's Advocate</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>advocate</element>
+        <qualifier>firstrespondent</qualifier>
+        <scope_note>First Respondent's Advocate</scope_note>
+    </dc-type>
+
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>district</qualifier>
+       <scope_note>Case District</scope_note>
+    </dc-type>
+
+    <dc-type>
+       <schema>dc</schema>
+       <element>judge</element>
+       <qualifier>name</qualifier>
+       <scope_note>Name of the Judge</scope_note>
+    </dc-type>
+
 </dspace-dc-types>
