@@ -206,6 +206,8 @@
                 <ref bean="searchFilterBatchNumber" /> 
                 <ref bean="searchFilterFileSize" /> 
                 <ref bean="searchFilterCharCount" /> 
+                <ref bean="searchFilterCnrNo" /> 
+
 
                 
 
@@ -247,6 +249,7 @@
                 <ref bean="searchFilterBatchNumber" /> 
                 <ref bean="searchFilterFileSize" /> 
                 <ref bean="searchFilterCharCount" /> 
+                <ref bean="searchFilterCnrNo" /> 
 
 
             </list>
@@ -2911,7 +2914,16 @@
         <property name="facetLimit" value="5"/>
         <property name="type" value="text"/>
     </bean>
-
+    <bean id="searchFilterCnrNo" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_cnrNo"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.cnrNo</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
 
 
     <bean id="searchFilterCaseNumberType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">

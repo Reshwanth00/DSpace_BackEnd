@@ -310,6 +310,7 @@
      <field name="dc_case_batchNumber" type="long" indexed="true" stored="true" multiValued="false" />
      <field name="dc_case_fileSize" type="int" indexed="true" stored="true" multiValued="false" />
      <field name="dc_case_charCount" type="int" indexed="true" stored="true" multiValued="false" />
+     <field name="dc_case_cnrNo" type="text" indexed="true" stored="true" multiValued="false" />
 
 
      <!-- Dynamic field used to store the relation metadata as a keywordFilter -->
@@ -398,6 +399,8 @@
  <copyField source="dc.case.batchNumber" dest="dc_case_batchNumber"/>
  <copyField source="dc.case.fileSize" dest="dc_case_fileSize"/>
  <copyField source="dc.case.charCount" dest="dc_case_charCount"/>
+ <copyField source="dc.case.cnrNo" dest="dc_case_cnrNo"/>
+
 
 
 </schema>
