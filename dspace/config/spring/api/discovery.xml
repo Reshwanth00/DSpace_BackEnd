@@ -2742,8 +2742,8 @@
     </bean>
 
 
-    <bean id="searchFilterCaseYear" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <property name="indexFieldName" value="dc_judge_date"/>
+    <bean id="searchFilterDisposalDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_disposal_date"/>
         <property name="metadataFields">
             <list>
                 <value>dc.disposal.date</value>
