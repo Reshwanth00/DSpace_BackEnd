@@ -60,6 +60,10 @@ public class Constants {
      */
     public static final int LDN_MESSAGE = 8;
 
+
+    public static final int BITSTREAM_COMMENT = 1001;
+
+
     /**
      * lets you look up type names from the type IDs
      */

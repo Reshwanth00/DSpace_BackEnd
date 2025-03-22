@@ -196,6 +196,15 @@
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/converter/WorkflowStepConverter.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/converter/WorkspaceItemConverter.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/converter/query/SearchQueryConverter.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamComment.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentController.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentDao.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentDaoImpl.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentRequestObj.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentResponseObj.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentRest.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentService.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/customLayer/BitstreamCommentServiceImpl.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/exception/DSpaceAccessDeniedHandler.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/exception/DSpaceApiExceptionControllerAdvice.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/exception/DSpaceBadRequestException.java
@@ -540,6 +549,7 @@
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/AuthorizationObjectLinkRepository.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/AuthorizationRestRepository.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/BitstreamBundleLinkRepository.java
+/home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/BitstreamCommentRestRepository.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/BitstreamFormatLinkRepository.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/BitstreamFormatRestRepository.java
 /home/diracai/Reshwanth_workspace/dspace/main/source/backend/dspace-server-webapp/src/main/java/org/dspace/app/rest/repository/BitstreamRestRepository.java
