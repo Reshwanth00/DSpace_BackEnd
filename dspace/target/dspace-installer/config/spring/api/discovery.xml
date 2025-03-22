@@ -190,6 +190,27 @@
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
+                <ref bean="searchFilterCaseType" /> 
+                <ref bean="searchFilterCaseNumber" />
+                <ref bean="searchFilterCaseNumberType" /> 
+                <ref bean="searchFilterCaseYear" /> 
+                <ref bean="searchFilterFirstrespondent" />
+                <ref bean="searchFilterFirstpetitioner" /> 
+                <ref bean="searchFilterAdvocateFirstpetitioner" /> 
+                <ref bean="searchFilterAdvocateFirstrespondent" /> 
+                <ref bean="searchFilterCaseDistrict" /> 
+                <ref bean="searchFilterScanDate" />      
+                <ref bean="searchFilterCaseVerify"/>
+                <ref bean="searchFilterDateVerification" />
+                <ref bean="searchFilterCaseBarCode" /> 
+                <ref bean="searchFilterBatchNumber" /> 
+                <ref bean="searchFilterFileSize" /> 
+                <ref bean="searchFilterCharCount" /> 
+
+                
+
+
+
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -210,6 +231,24 @@
                 <ref bean="searchFilterIsOrgUnitOfPublicationRelation"/>
                 <ref bean="searchFilterIsPublicationOfJournalIssueRelation"/>
                 <ref bean="searchFilterIsJournalOfPublicationRelation"/>
+                <ref bean="searchFilterCaseType" /> 
+                <ref bean="searchFilterCaseNumber" />
+                <ref bean="searchFilterCaseNumberType" /> 
+                <ref bean="searchFilterCaseYear" /> 
+                <ref bean="searchFilterFirstrespondent" />
+                <ref bean="searchFilterFirstpetitioner" /> 
+                <ref bean="searchFilterAdvocateFirstpetitioner" /> 
+                <ref bean="searchFilterAdvocateFirstrespondent" /> 
+                <ref bean="searchFilterCaseDistrict" /> 
+                <ref bean="searchFilterScanDate" />      
+                <ref bean="searchFilterCaseVerify"/>
+                <ref bean="searchFilterDateVerification" />
+                <ref bean="searchFilterCaseBarCode" /> 
+                <ref bean="searchFilterBatchNumber" /> 
+                <ref bean="searchFilterFileSize" /> 
+                <ref bean="searchFilterCharCount" /> 
+
+
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -2659,6 +2698,259 @@
             </list>
         </property>
     </bean>
+
+
+
+<!-- ################################################################################## -->
+
+
+    <bean id="searchFilterCaseType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_type"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.type</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterCaseNumber" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_number"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.number</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+ 
+
+    <bean id="searchFilterCaseYear" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_year"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.year</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+
+    <bean id="searchFilterCaseYear" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_judge_date"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.disposal.date</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterJudgeName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_judge_Name"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.judge.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterJudgeDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_judge_date"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.judge.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterFirstrespondent" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_party_firstrespondent"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.party.firstrespondent</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterFirstpetitioner" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_party_firstpetitioner"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.party.firstpetitioner</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterAdvocateFirstpetitioner" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_advocate_firstpetitioner"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.advocate.firstpetitioner</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>    
+
+    <bean id="searchFilterAdvocateFirstrespondent" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_advocate_firstrespondent"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.advocate.firstrespondent</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>    
+    
+
+    <bean id="searchFilterCaseDistrict" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_district"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.district</value>
+            </list>
+        </property>
+        <property name="type" value="text"/>
+        <property name="facetLimit" value="10"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+    </bean>
+
+    
+
+    
+
+    <bean id="searchFilterScanDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_scan_date"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.scan.date</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>    
+    
+    <bean id="searchFilterCaseVerify" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_verify"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.verify</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>    
+    
+    <bean id="searchFilterDateVerification" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_dateVerification"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.dateVerification</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>    
+    
+    <bean id="searchFilterCaseBarCode" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_barCode"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.barCode</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+
+    <bean id="searchFilterBatchNumber" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_batchNumber"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.batchNumber</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+
+    <bean id="searchFilterFileSize" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_fileSize"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.fileSize</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+    <bean id="searchFilterCharCount" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_charCount"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.charCount</value>                
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+
+
+    <bean id="searchFilterCaseNumberType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="dc_case_numberType"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.case.number</value>                
+                <value>dc.case.type</value>
+                <value>dc.case.year</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="type" value="text"/>
+    </bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ##################################################################################### -->
+
+
+
+
+
+
 
     <bean id="searchFilterObjectType"
         class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">

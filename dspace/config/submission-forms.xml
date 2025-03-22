@@ -90,10 +90,235 @@
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Case Type</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>number</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Case number</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>year</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Case Year</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>disposal</dc-element>
+                    <dc-qualifier>date</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Disposal Date</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>judge</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Judge name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the Judge name</hint>
+                    <required>no</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>party</dc-element>
+                    <dc-qualifier>firstpetitioner</dc-qualifier>
+                    <label>First Petitioner</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the First Petitioner</hint>
+                    <required>no</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>party</dc-element>
+                    <dc-qualifier>firstrespondent</dc-qualifier>
+                    <label>First Respondent</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the First Respondent</hint>
+                    <required>no</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>advocate</dc-element>
+                    <dc-qualifier>firstrespondent</dc-qualifier>
+                    <label> Respondent's Advocate Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter Respondent's Advocate Name</hint>
+                    <required>no</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>advocate</dc-element>
+                    <dc-qualifier>firstpetitioner</dc-qualifier>
+                    <label>Petitioner's Advocate Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter  Petitioner's Advocate Name</hint>
+                    <required>no</required>
+                </field>
+            </row>           
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>district</dc-qualifier>
+                    <label>Case district</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the Case District</hint>
+                    <required>no</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>scan</dc-element>
+                    <dc-qualifier>Date</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Scan Date</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>verify</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Verify By</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>dateVerification</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Date Verification</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>barCode</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Bar Code</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>year</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Case Year</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>batchNumber</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Batch Number</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>fileSize</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>File Size</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>charCount</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Char Count</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>cnrNo</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>CNR No.</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
+                    <label>Judgement Date</label>
                     <style>col-sm-4</style>
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.
@@ -295,7 +520,7 @@
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
+                    <label>Judgement Date</label>
                     <style>col-sm-4</style>
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.
@@ -873,7 +1098,7 @@
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
+                    <label>Judgement Date</label>
                     <style>col-sm-4</style>
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.

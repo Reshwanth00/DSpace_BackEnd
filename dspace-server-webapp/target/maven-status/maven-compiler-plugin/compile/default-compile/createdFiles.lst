@@ -16,6 +16,7 @@ org/dspace/app/rest/converter/NotifyServiceConverter.class
 org/dspace/app/rest/repository/BitstreamThumbnailLinkRepository.class
 org/dspace/app/rest/security/VersioningSecurityBean.class
 org/dspace/app/rest/exception/RepositoryMethodNotImplementedException.class
+org/dspace/app/rest/customLayer/BitstreamCommentDao.class
 org/dspace/app/rest/submit/factory/impl/RemovePatchOperation.class
 org/dspace/app/rest/GroupRestController.class
 org/dspace/app/rest/authorization/impl/CanChangePasswordFeature.class
@@ -73,6 +74,7 @@ org/dspace/app/rest/repository/patch/operation/ldn/NotifyServiceUrlAddOperation.
 org/dspace/app/rest/scripts/handler/impl/RestDSpaceRunnableHandler.class
 org/dspace/app/rest/model/hateoas/ResourcePolicyResource.class
 org/dspace/app/rest/model/hateoas/AccessStatusResource.class
+org/dspace/app/rest/customLayer/BitstreamCommentService.class
 org/dspace/app/rest/model/hateoas/WorkflowActionResource.class
 org/dspace/app/rest/model/step/DataAccessCondition.class
 org/dspace/app/rest/utils/ContextUtil.class
@@ -151,6 +153,7 @@ org/dspace/app/rest/repository/patch/operation/EPersonNetidReplaceOperation.clas
 org/dspace/app/rest/converter/DiscoverFacetValueConverter.class
 org/dspace/app/rest/repository/handler/ExternalSourceEntryWorkspaceItemUriListHandler.class
 org/dspace/app/rest/exception/MethodNotAllowedException.class
+org/dspace/app/rest/customLayer/BitstreamCommentController.class
 org/dspace/app/rest/model/hateoas/ProcessFileTypesResource.class
 org/dspace/app/rest/repository/patch/operation/DSpaceObjectMetadataAddOperation.class
 org/dspace/app/rest/model/hateoas/SubmissionAccessOptionResource.class
@@ -226,6 +229,7 @@ org/dspace/app/rest/repository/BulkAccessConditionRestRepository.class
 org/dspace/app/rest/model/hateoas/AuthenticationTokenResource.class
 org/dspace/app/rest/utils/CollectionRestEqualityUtils.class
 org/dspace/app/rest/model/LDNMessageEntityRest.class
+org/dspace/app/rest/customLayer/BitstreamCommentRequestObj.class
 org/dspace/app/rest/repository/GroupEPersonLinkRepository.class
 org/dspace/app/rest/security/RestObjectPermissionEvaluatorPlugin.class
 org/dspace/app/rest/model/ErrorRest.class
@@ -244,6 +248,7 @@ org/dspace/app/rest/utils/DSpaceConfigurationInitializer.class
 org/dspace/app/rest/security/OrcidLoginFilter.class
 org/dspace/app/rest/submit/factory/impl/NotifySubmissionService.class
 org/dspace/app/rest/submit/step/CollectionStep.class
+org/dspace/app/rest/customLayer/BitstreamCommentRest.class
 org/dspace/app/rest/submit/factory/impl/NotifyServiceAddPatchOperation.class
 org/dspace/app/rest/converter/SubmissionCCLicenseFieldConverter.class
 org/dspace/app/rest/repository/patch/operation/ldn/NotifyServiceLdnUrlReplaceOperation.class
@@ -478,6 +483,7 @@ org/dspace/app/rest/login/impl/ResearcherProfileAutomaticClaim.class
 org/dspace/app/rest/exception/EPersonNameNotProvidedException.class
 org/dspace/app/rest/security/SubscriptionRestPermissionEvaluatorPlugin.class
 org/dspace/app/rest/model/hateoas/FilteredCollectionsResource.class
+org/dspace/app/rest/repository/BitstreamCommentRestRepository.class
 org/dspace/app/rest/repository/MetadataSchemaRestRepository.class
 org/dspace/app/rest/model/SiteRest.class
 org/dspace/app/rest/repository/SubmissionCCLicenseRestRepository.class
@@ -486,6 +492,7 @@ org/dspace/app/rest/authorization/impl/CanClaimItemFeature.class
 org/dspace/app/rest/model/hateoas/WorkspaceItemResource.class
 org/dspace/app/rest/repository/handler/ExternalSourceItemUriListHandler.class
 org/dspace/app/rest/Parameter.class
+org/dspace/app/rest/customLayer/BitstreamCommentResponseObj.class
 org/dspace/app/rest/converter/ExternalSourceEntryRestConverter.class
 org/dspace/app/rest/utils/DSpaceObjectUtils.class
 org/dspace/app/rest/security/PoolTaskRestPermissionEvaluatorPlugin.class
@@ -644,6 +651,7 @@ org/dspace/app/rest/authorization/impl/CreateBundleFeature.class
 org/dspace/app/rest/converter/BitstreamFormatConverter.class
 org/dspace/app/rest/repository/patch/operation/ldn/NotifyServiceInboundPatternConstraintRemoveOperation.class
 org/dspace/app/rest/submit/factory/impl/ItemMetadataValueRemovePatchOperation.class
+org/dspace/app/rest/customLayer/BitstreamComment.class
 org/dspace/app/rest/projection/FullProjection.class
 org/dspace/app/rest/repository/patch/operation/EPersonPasswordAddOperation$PasswordVO.class
 org/dspace/app/rest/authorization/impl/CanSeeVersionsFeature.class
@@ -687,6 +695,7 @@ org/dspace/app/rest/converter/MetadataValueDTOConverter.class
 org/dspace/app/rest/repository/patch/operation/BundleMoveOperation.class
 org/dspace/app/rest/parameter/SearchFilter.class
 org/dspace/app/rest/submit/step/DuplicateDetectionStep.class
+org/dspace/app/rest/customLayer/BitstreamCommentServiceImpl.class
 org/dspace/app/rest/model/ScoreReviewActionAdvancedInfoRest.class
 org/dspace/app/rest/repository/ItemRestRepository.class
 org/dspace/app/rest/converter/HarvestedCollectionConverter.class
@@ -834,6 +843,7 @@ org/dspace/app/rest/security/OrcidQueueSearchRestPermissionEvaluatorPlugin.class
 org/dspace/app/rest/submit/factory/impl/AccessConditionDiscoverableReplacePatchOperation.class
 org/dspace/app/rest/exception/DSpaceApiExceptionControllerAdvice.class
 org/dspace/app/rest/submit/factory/impl/LicenseReplacePatchOperation.class
+org/dspace/app/rest/customLayer/BitstreamCommentDaoImpl.class
 org/dspace/app/rest/exception/RepositorySearchMethodNotFoundException.class
 org/dspace/app/rest/repository/SupervisionOrderRestRepository.class
 org/dspace/app/rest/converter/DiscoverResultConverter.class
