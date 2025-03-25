@@ -611,63 +611,112 @@
         <qualifier>number</qualifier>
         <scope_note></scope_note>
     </dc-type>
-
     <dc-type>
         <schema>dc</schema>
         <element>case</element>
         <qualifier>year</qualifier>
         <scope_note></scope_note>
     </dc-type>
-
     <dc-type>
         <schema>dc</schema>
         <element>case</element>
         <qualifier>type</qualifier>
         <scope_note></scope_note>
     </dc-type>
-
+    <dc-type>
+        <schema>dc</schema>
+        <element>case</element>
+        <qualifier>disposaldate</qualifier>
+        <scope_note>Disposal Date</scope_note>
+    </dc-type>
     <dc-type>
         <schema>dc</schema>
         <element>party</element>
         <qualifier>firstrespondent</qualifier>
         <scope_note>First Respondent</scope_note>
     </dc-type>
-
     <dc-type>
         <schema>dc</schema>
         <element>party</element>
         <qualifier>firstpetitioner</qualifier>
         <scope_note>First Petitioner</scope_note>
     </dc-type>
-
     <dc-type>
         <schema>dc</schema>
         <element>advocate</element>
         <qualifier>firstpetitioner</qualifier>
         <scope_note>First Petitioner's Advocate</scope_note>
     </dc-type>
-
     <dc-type>
         <schema>dc</schema>
         <element>advocate</element>
         <qualifier>firstrespondent</qualifier>
         <scope_note>First Respondent's Advocate</scope_note>
     </dc-type>
-
     <dc-type>
        <schema>dc</schema>
        <element>case</element>
        <qualifier>district</qualifier>
        <scope_note>Case District</scope_note>
     </dc-type>
-
     <dc-type>
        <schema>dc</schema>
        <element>judge</element>
        <qualifier>name</qualifier>
        <scope_note>Name of the Judge</scope_note>
     </dc-type>
-        
- 
-
+     <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>scandate</qualifier>
+       <scope_note>Scan Date</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>approveby</qualifier>
+       <scope_note>Approve By</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>dateverification</qualifier>
+       <scope_note>Date Verification</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>barcode</qualifier>
+       <scope_note>Bar Code</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>batchnumber</qualifier>
+       <scope_note>Batch Number</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>filesize</qualifier>
+       <scope_note>File Size</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>charcount</qualifier>
+       <scope_note>Char Count</scope_note>
+    </dc-type>
+    <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>cnrno</qualifier>
+       <scope_note>CNR NO.</scope_note>
+    </dc-type>
+        <dc-type>
+       <schema>dc</schema>
+       <element>case</element>
+       <qualifier>verify</qualifier>
+       <scope_note>Verify By</scope_note>
+    </dc-type>
 </dspace-dc-types>

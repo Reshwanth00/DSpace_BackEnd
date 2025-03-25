@@ -88,19 +88,6 @@
                 </field>
             </row>
 
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>number</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Case number</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-
 
             <row>
                 <field>
@@ -112,9 +99,25 @@
                     <!-- <input-type>onebox</input-type> -->
                     <input-type value-pairs-name="common_types">dropdown</input-type>
                     <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
+                    <required>Yes</required>
                 </field>
             </row>
+
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>number</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Case number</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required>yes</required>
+                </field>
+            </row>
+
+
+
 
             <row>
                 <field>
@@ -124,8 +127,7 @@
                     <repeatable>true</repeatable>
                     <label>Case Year</label>
                     <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
+                    <required>yes</required>
                 </field>
             </row>
 
@@ -137,7 +139,7 @@
                     <label>Judge name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the Judge name</hint>
-                    <required>no</required>
+                    <required>if you write something in this tag then it is mandatory field</required>
                 </field>
             </row>
 
@@ -149,7 +151,7 @@
                     <label>First Respondent</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the First Respondent</hint>
-                    <required>no</required>
+                    <required>for the fields not required leave this tag blank</required>
                 </field>
             </row>
 
@@ -161,7 +163,7 @@
                     <label>First Petitioner</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the First Petitioner</hint>
-                    <required>no</required>
+                    <required>if you write something in this tag then it is mandatory field</required>
                 </field>
             </row>
 
@@ -174,7 +176,7 @@
                     <label> Respondent's Advocate Name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter Respondent's Advocate Name</hint>
-                    <required>no</required>
+                    <required>yes</required>
                 </field>
             </row>
 
@@ -186,10 +188,19 @@
                     <label>Petitioner's Advocate Name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter  Petitioner's Advocate Name</hint>
-                    <required>no</required>
+                    <required>yes</required>
                 </field>
             </row>       
-            
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>cnrno</dc-qualifier>
+                    <label>CNR NO.</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>    
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -202,7 +213,88 @@
                 </field>
             </row>
  
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>scandate</dc-qualifier>
+                    <label>Scan Date</label>
+                    <input-type>date</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>approveby</dc-qualifier>
+                    <label>Approve by</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>dateverification</dc-qualifier>
+                    <label>date Verification</label>
+                    <input-type>date</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>barcode</dc-qualifier>
+                    <label>Bar Code</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>batchnumber</dc-qualifier>
+                    <label>Batch Number</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>filesize</dc-qualifier>
+                    <label>File Size</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>disposaldate</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Disposal Date</label>
+                    <input-type>date</input-type>
+                    <required></required>
+                </field>
+            </row>
 
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>charcount</dc-qualifier>
+                    <label>Char Count</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -269,19 +361,7 @@
                     <required></required>
                 </field>
             </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>type</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Case Type</label>
-                    <input-type value-pairs-name="common_types">dropdown</input-type>
-                    <hint>Select the Case type of content of the item.
-                    </hint>
-                    <required>You must choose at least one type.</required>
-                </field>
-            </row>
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
