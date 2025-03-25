@@ -735,6 +735,15 @@
         <scope_note>Char Count</scope_note>
     </dc-type>
 
+    <dc-type>
+        <schema>dc</schema>
+        <element>case</element>
+        <qualifier>cnrNo</qualifier>
+        <scope_note>CNR No.</scope_note>
+    </dc-type>
+
+    
+
 
 
 </dspace-dc-types>

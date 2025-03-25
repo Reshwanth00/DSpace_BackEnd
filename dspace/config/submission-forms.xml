@@ -87,18 +87,7 @@
                     <required></required>
                 </field>
             </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>type</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Case Type</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -111,6 +100,22 @@
                     <required></required>
                 </field>
             </row>
+
+
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Case Type</label>
+                    <!-- <input-type>onebox</input-type> -->
+                    <input-type value-pairs-name="common_types">dropdown</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -123,18 +128,7 @@
                     <required></required>
                 </field>
             </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>disposal</dc-element>
-                    <dc-qualifier>date</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Disposal Date</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -146,17 +140,7 @@
                     <required>no</required>
                 </field>
             </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>party</dc-element>
-                    <dc-qualifier>firstpetitioner</dc-qualifier>
-                    <label>First Petitioner</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the First Petitioner</hint>
-                    <required>no</required>
-                </field>
-            </row>
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -168,6 +152,20 @@
                     <required>no</required>
                 </field>
             </row>
+
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>party</dc-element>
+                    <dc-qualifier>firstpetitioner</dc-qualifier>
+                    <label>First Petitioner</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the First Petitioner</hint>
+                    <required>no</required>
+                </field>
+            </row>
+
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -179,6 +177,7 @@
                     <required>no</required>
                 </field>
             </row>
+
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -189,7 +188,8 @@
                     <hint>Enter  Petitioner's Advocate Name</hint>
                     <required>no</required>
                 </field>
-            </row>           
+            </row>       
+            
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -201,105 +201,8 @@
                     <required>no</required>
                 </field>
             </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>scan</dc-element>
-                    <dc-qualifier>Date</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Scan Date</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>verify</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Verify By</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>dateVerification</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Date Verification</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>barCode</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Bar Code</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
+ 
 
-
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>batchNumber</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Batch Number</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>fileSize</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>File Size</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>charCount</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Char Count</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>cnrNo</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>CNR No.</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -372,9 +275,9 @@
                     <dc-element>type</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Type</label>
+                    <label>Case Type</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
-                    <hint>Select the type of content of the item.
+                    <hint>Select the Case type of content of the item.
                     </hint>
                     <required>You must choose at least one type.</required>
                 </field>
@@ -1582,7 +1485,7 @@
             </pair>
         </value-pairs>
 
-        <value-pairs value-pairs-name="common_types" dc-term="type">
+        <!-- <value-pairs value-pairs-name="common_types" dc-term="type">
             <pair>
                 <displayed-value>Animation</displayed-value>
                 <stored-value>Animation</stored-value>
@@ -1671,7 +1574,698 @@
                 <displayed-value>Other</displayed-value>
                 <stored-value>Other</stored-value>
             </pair>
+        </value-pairs> -->
+
+        <value-pairs value-pairs-name="common_types" dc-term="type">
+            <pair>
+            <displayed-value>ADMLS-Admirality Suits.</displayed-value>
+            <stored-value>ADMLS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>AHO-Appeal Against High Court Order.</displayed-value>
+            <stored-value>AHO</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ARBA-Appeals under Arbitration Conciliation Act</displayed-value>
+            <stored-value>ARBA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ARBP-Petitions under Arbitration and Conciliation Act</displayed-value>
+            <stored-value>ARBP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>AS-Admirality Suit.</displayed-value>
+            <stored-value>AS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>BKGP-Proceedings under Banking Regulation Act</displayed-value>
+            <stored-value>BKGP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>BLAPL-Bail Application.</displayed-value>
+            <stored-value>BLAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CEREF-Reference under Central Excise Act.</displayed-value>
+            <stored-value>CEREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CMAPL-Miscellaneous Applications.</displayed-value>
+            <stored-value>CMAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CMP-Civil Miscellaneous Petition</displayed-value>
+            <stored-value>CMP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CMPA-Company Appeal.</displayed-value>
+            <stored-value>CMPA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CMPAT-Company Act.</displayed-value>
+            <stored-value>CMPAT</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CMPMC-Company Misc.Case.</displayed-value>
+            <stored-value>CMPMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CO-Cross Objections in First Appeal.</displayed-value>
+            <stored-value>CO</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>COA-Appeals against judgement in Comp.Pet.</displayed-value>
+            <stored-value>COA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>COAPL-Appl.in pending Proceeding(Comp. Act.)</displayed-value>
+            <stored-value>COAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>COCAS-Matters transfered US 446(3)(Comp.Act.)</displayed-value>
+            <stored-value>COCAS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTAC-Appeals against orders in Civil Contempt</displayed-value>
+            <stored-value>CONTAC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTAR-Appeals against orders in Crl.Cont.matter</displayed-value>
+            <stored-value>CONTAR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTC-Cotempt of Court Cases (Civil contempt)</displayed-value>
+            <stored-value>CONTC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTR-Proceeding relating to Criminal Contempt</displayed-value>
+            <stored-value>CONTR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>COPET-Orginal Petition (Companies Act.)</displayed-value>
+            <stored-value>COPET</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRA-Criminal Appeals</displayed-value>
+            <stored-value>CRA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLA-Appeal against Judgement/Sentence.</displayed-value>
+            <stored-value>CRLA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLLP-Appl.for leave to appeal US 378 Cr.P.C.</displayed-value>
+            <stored-value>CRLLP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLMA-Other Miscellaneous Application.</displayed-value>
+            <stored-value>CRLMA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLMC-Appl.under Sec.482 Cr.P.C.</displayed-value>
+            <stored-value>CRLMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLMP-Criminal Miscellaneous Petition</displayed-value>
+            <stored-value>CRLMP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLREF-Criminal Reference</displayed-value>
+            <stored-value>CRLREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLREV-Criminal Revision.</displayed-value>
+            <stored-value>CRLREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRLTR-Original Trial.</displayed-value>
+            <stored-value>CRLTR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRMC-Criminal Miscellaneous Case</displayed-value>
+            <stored-value>CRMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRP-Revision Petition.</displayed-value>
+            <stored-value>CRP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRREF-Criminal Reference</displayed-value>
+            <stored-value>CRREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CRREV-Criminal Revision</displayed-value>
+            <stored-value>CRREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CS-Civil Suit</displayed-value>
+            <stored-value>CS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CS(OS)-Civil suits.</displayed-value>
+            <stored-value>CS(OS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CUSREF-Reference under Customs Act.</displayed-value>
+            <stored-value>CUSREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CVA-Civil Appeals</displayed-value>
+            <stored-value>CVA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CVREF-Civil Reference.</displayed-value>
+            <stored-value>CVREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CVREV-Civil Revision.</displayed-value>
+            <stored-value>CVREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CVRVW-Civil Review.</displayed-value>
+            <stored-value>CVRVW</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>DREF-Death Reference.</displayed-value>
+            <stored-value>DREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>DSREF-Confirmation under Sec.336 Cr.P.C.</displayed-value>
+            <stored-value>DSREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EC-Execution Case.</displayed-value>
+            <stored-value>EC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EDA-Appl.for reference under Estate Duty Act</displayed-value>
+            <stored-value>EDA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EDR-Reference to High Court (Estate Tax Act)</displayed-value>
+            <stored-value>EDR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ELA-Appeals from Judgement in Election Pet.</displayed-value>
+            <stored-value>ELA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ELPET-Election Petitions.</displayed-value>
+            <stored-value>ELPET</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EP-Election Petition Case.</displayed-value>
+            <stored-value>EP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EXFA-Execution First Appeal.</displayed-value>
+            <stored-value>EXFA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EXOS-Execution Application.</displayed-value>
+            <stored-value>EXOS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EXP-Execution Petition.</displayed-value>
+            <stored-value>EXP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>EXSA-Execution Second Appeal.</displayed-value>
+            <stored-value>EXSA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>FA-First Appeal</displayed-value>
+            <stored-value>FA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>FA(OS)-FA from Judgement in original suits.</displayed-value>
+            <stored-value>FA(OS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>FAO-First Appeal from Orders.</displayed-value>
+            <stored-value>FAO</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>GA-Government Appeals</displayed-value>
+            <stored-value>GA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>GCRLA-Government Appeals</displayed-value>
+            <stored-value>GCRLA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>GTA-Appl.for reference under Gift Tax Act.</displayed-value>
+            <stored-value>GTA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>GTR-Reference to High Court (Gift Tax Act.)</displayed-value>
+            <stored-value>GTR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>GUAP-Pet. under Guardianship and Wards Act.</displayed-value>
+            <stored-value>GUAP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>IA-Interlocutory Appl. in suits/appeals.</displayed-value>
+            <stored-value>IA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>INSA-Appeals under Insurance Act.</displayed-value>
+            <stored-value>INSA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>INSREF-Reference under Insurance Act.</displayed-value>
+            <stored-value>INSREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>INTEST-Intestate cases.</displayed-value>
+            <stored-value>INTEST</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>IP(M)-Main Petition (Insolvency Act)</displayed-value>
+            <stored-value>IP(M)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>IPAPL-Appls.submittel after adjudication.</displayed-value>
+            <stored-value>IPAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ITA-Appeals Income-tax</displayed-value>
+            <stored-value>ITA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ITR-Reference under Income-tax Act.</displayed-value>
+            <stored-value>ITR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>JCRA-Jail Criminal Appeals</displayed-value>
+            <stored-value>JCRA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>JCRLA-Jail Criminal Appeal</displayed-value>
+            <stored-value>JCRLA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>JCRLMC-Jail Criminal Misc Case.</displayed-value>
+            <stored-value>JCRLMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>JCRLRV-Jail Criminal Revision.</displayed-value>
+            <stored-value>JCRLRV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>JCRMC-Jail Criminal Misc.Case.</displayed-value>
+            <stored-value>JCRMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>JCRREV-Jail Criminal Revision</displayed-value>
+            <stored-value>JCRREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>LAA-Appeals (Land Acquisition Act)</displayed-value>
+            <stored-value>LAA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>LAREF-References (Land Acquisition Act)</displayed-value>
+            <stored-value>LAREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>LPA-Letters Patent Appeals.</displayed-value>
+            <stored-value>LPA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MA-Miscellaneous Appeals</displayed-value>
+            <stored-value>MA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MAC-Motor Accident Claims.</displayed-value>
+            <stored-value>MAC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MACA-Motor Accident Appeals.</displayed-value>
+            <stored-value>MACA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MATA-Matrimonial Cases (Appeals)</displayed-value>
+            <stored-value>MATA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MATCAS-Matrimonial Case (Suits/Petitions)</displayed-value>
+            <stored-value>MATCAS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MATREF-Matrimonial Case (References)</displayed-value>
+            <stored-value>MATREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MFA-FA against Spl. Jurisdiction Cases.</displayed-value>
+            <stored-value>MFA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MJC-Misc.Judicial Case.</displayed-value>
+            <stored-value>MJC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MREF-Matrimonial Reference.</displayed-value>
+            <stored-value>MREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MSA-SA from judgements in Misc. Cases.</displayed-value>
+            <stored-value>MSA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>MSREF-Misc. summons/summons for Judgment/</displayed-value>
+            <stored-value>MSREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>NM-Notice of Motion.</displayed-value>
+            <stored-value>NM</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OCRMC-Original Crl. Miscellaneous Case</displayed-value>
+            <stored-value>OCRMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OJC-Original Jurisdiction case (Writ)</displayed-value>
+            <stored-value>OJC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OREF-References.</displayed-value>
+            <stored-value>OREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OS-Original Suit.</displayed-value>
+            <stored-value>OS</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OTAPL-Other Tax Applications.</displayed-value>
+            <stored-value>OTAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OTC-Other Tax Case.</displayed-value>
+            <stored-value>OTC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OTR-Other Tax References Cases.</displayed-value>
+            <stored-value>OTR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>OVTA-Tax Appeal Under OVAT Act</displayed-value>
+            <stored-value>OVTA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RCC-Original Suits/Pet.(Rent Control Matters</displayed-value>
+            <stored-value>RCC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RCFA-First Appeals(Rent Control Matters)</displayed-value>
+            <stored-value>RCFA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RCREV-Revision (Rent Control Matters)</displayed-value>
+            <stored-value>RCREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RCSA-Second Appeals(Rent Control Matters)</displayed-value>
+            <stored-value>RCSA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RFA-FA from Judgement and Decree in Suit</displayed-value>
+            <stored-value>RFA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RPFAM-Revision US 19 of Family Court Act.</displayed-value>
+            <stored-value>RPFAM</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RSA-Second Appeal from Judgement and Decree.</displayed-value>
+            <stored-value>RSA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RVWPET-Review Petition.</displayed-value>
+            <stored-value>RVWPET</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SA-Second Appeal</displayed-value>
+            <stored-value>SA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SAO-Second Appeal from Appellate Order.</displayed-value>
+            <stored-value>SAO</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SCA-Supreme Court Appeal.</displayed-value>
+            <stored-value>SCA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SCLP-Pet.for leave to appeal to Supreme Court</displayed-value>
+            <stored-value>SCLP</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SJC-Special Jurisdiction Case (Tax Matters)</displayed-value>
+            <stored-value>SJC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SM-Suo Motu.</displayed-value>
+            <stored-value>SM</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SPA-Sp.Appeal before DB ...</displayed-value>
+            <stored-value>SPA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>SPJC-Special Jurisdiction Cases.</displayed-value>
+            <stored-value>SPJC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>STAPL-Appl.for direction to make a reference.</displayed-value>
+            <stored-value>STAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>STREF-Sales Tax reference.</displayed-value>
+            <stored-value>STREF</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>STREV-Sales Tax Revision.</displayed-value>
+            <stored-value>STREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>TA-Tax Appeal</displayed-value>
+            <stored-value>TA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>TEST-Testamentary Cases.</displayed-value>
+            <stored-value>TEST</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>TMC-Testamentary Misc.Case.</displayed-value>
+            <stored-value>TMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>TREV-Tax Revesion</displayed-value>
+            <stored-value>TREV</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>TRP(C)-Transfer Petition under Sec.24 CPC</displayed-value>
+            <stored-value>TRP(C)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>TRPCRL-Transfer Petition for transfer of Crl. Proceeding</displayed-value>
+            <stored-value>TRPCRL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WA-Appeals before DB against SB Judgement</displayed-value>
+            <stored-value>WA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WP(C)-Writ Petition under Art.226 and 227.</displayed-value>
+            <stored-value>WP(C)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPCRL-Pet.UA.226 for Writ of Habeas Corpus.</displayed-value>
+            <stored-value>WPCRL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WTA-Appl.for reference under Wealth Tax Act.</displayed-value>
+            <stored-value>WTA</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WTR-Reference to High Court (Wealth Tax Act)</displayed-value>
+            <stored-value>WTR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ABLAPL- Anticipatory Bail</displayed-value>
+            <stored-value>ABLAPL</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>Civil Revision</displayed-value>
+            <stored-value>CR</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OA)-Original Application in Bhubaneswar Bench</displayed-value>
+            <stored-value>WPC(OA)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAC)-Original Application in Cuttack Bench</displayed-value>
+            <stored-value>WPC(OAC)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAB)-Original Application in Berhampur Bench</displayed-value>
+            <stored-value>WPC(OAB)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAS)-Original Application in Sambalpur Bench</displayed-value>
+            <stored-value>WPC(OAS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAP)-Original Application (Provisional) Bhubaneswar Bench</displayed-value>
+            <stored-value>WPC(OAP)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPC)-Original Application (Provisional) in Cuttack Bench</displayed-value>
+            <stored-value>WPC(OAPC)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPB)-Original Application (Provisional) in Berhampur Bench</displayed-value>
+            <stored-value>WPC(OAPB)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPS)-Original Application (Provisional) in Sambalpur Bench</displayed-value>
+            <stored-value>WPC(OAPS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(TA)-Transfer Application in Bhubaneswar Bench</displayed-value>
+            <stored-value>WPC(TA)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(TAC)-Transfer Application in Cuttack Bench</displayed-value>
+            <stored-value>WPC(TAC)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(TAB)-Transfer Application in Berhampur Bench</displayed-value>
+            <stored-value>WPC(TAB)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(TAS)-Transfer Application in Sambalpur Bench</displayed-value>
+            <stored-value>WPC(TAS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTC(CP)-Contempt Petition in Bhubaneswar Bench</displayed-value>
+            <stored-value>CONTC(CP)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTC(CPC)-Contempt Petition in Cuttack Bench</displayed-value>
+            <stored-value>CONTC(CPC)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTC(CPB)-Contempt Petition in Berhampur Bench</displayed-value>
+            <stored-value>CONTC(CPB)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>CONTC(CPS)-Contempt Petition in Sambalpur Bench</displayed-value>
+            <stored-value>CONTC(CPS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RVWPET(RP)-Review Petition in Bhubaneswar Bench</displayed-value>
+            <stored-value>RVWPET(RP)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RVWPET(RPC)-Review Petition in Cuttack Bench</displayed-value>
+            <stored-value>RVWPET(RPC)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RVWPET(RPB)-Review Petition in Berhampur Bench</displayed-value>
+            <stored-value>RVWPET(RPB)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RVWPET(RPS)-Review Petition in Sambalpur Bench</displayed-value>
+            <stored-value>RVWPET(RPS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>RMC</displayed-value>
+            <stored-value>RMC</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ARBP(ICA)-Application Us 34 of the Act involving International Commercial Arbitration</displayed-value>
+            <stored-value>ARBP(ICA)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ARBA(ICA)-Appeals preferred US37 of the Act involving-International Commercial Arbitration</displayed-value>
+            <stored-value>ARBA(ICA)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPP)-Original Application Permission Petition in Bhubaneswar</displayed-value>
+            <stored-value>WPC(OAPP)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPPC)-Original Application Permission Petition in Cuttack</displayed-value>
+            <stored-value>WPC(OAPPC)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPPB)-Original Application Permission Petition in Berhampur</displayed-value>
+            <stored-value>WPC(OAPPB)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(OAPPS)-Original Application Permission Petition in Sambalpur</displayed-value>
+            <stored-value>WPC(OAPPS)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>WPC(T)-Temporary Number in Bhubaneswar</displayed-value>
+            <stored-value>WPC(T)</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>Arbitration Appeal</displayed-value>
+            <stored-value>Arbitration Appeal</stored-value>
+            </pair>
+            <pair>
+            <displayed-value>ADMLA-Admirality Suits Appeal</displayed-value>
+            <stored-value>ADMLA</stored-value>
+            </pair>
         </value-pairs>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         <!-- default language order: (from dspace 1.2.1)
              "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""

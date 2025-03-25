@@ -249,19 +249,7 @@
                     <required></required>
                 </field>
             </row>
-            
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>case</dc-element>
-                    <dc-qualifier>year</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Case Year</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                    <required></required>
-                </field>
-            </row>
+
 
             <row>
                 <field>
@@ -295,6 +283,18 @@
                     <dc-qualifier>charCount</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Char Count</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>case</dc-element>
+                    <dc-qualifier>cnrNo</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>CNR No.</label>
                     <input-type>onebox</input-type>
                     <hint>If the item has any alternative titles, please enter them here.</hint>
                     <required></required>
