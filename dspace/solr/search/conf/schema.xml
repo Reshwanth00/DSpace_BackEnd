@@ -296,12 +296,19 @@
      <field name="dc.case.year" type="string" indexed="true" stored="true" multiValued="false"/>
      <field name="dc.party.firstrespondent" type="string" indexed="true" stored="true" multiValued="false" />
      <field name="dc.party.firstpetitioner" type="string" indexed="true" stored="true" multiValued="false" />
-       
-
-     <field name="dc_judge_name" type="text" indexed="true" stored="true" multiValued="false" /> 
-     <field name="dc_advocate_firstpetitioner" type="text" indexed="true" stored="true" multiValued="false" />
-     <field name="dc_advocate_firstrespondent" type="text" indexed="true" stored="true" multiValued="false" />
-     <field name="dc_case_district" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.judge.name" type="text" indexed="true" stored="true" multiValued="false" /> 
+     <field name="dc.advocate.firstpetitioner" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.advocate.firstrespondent" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.disposaldate" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.scandate" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.approveby" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.district" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.dateverification" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.filesize" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.batchnumber" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.charcount" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.cnrno" type="text" indexed="true" stored="true" multiValued="false" />
+     <field name="dc.case.verify" type="text" indexed="true" stored="true" multiValued="false" />
 
 
      <!-- Dynamic field used to store the relation metadata as a keywordFilter -->
@@ -370,17 +377,27 @@
         is added to the index.  It's used either to index the same field differently,
         or to add multiple fields to the same field for easier/faster searching.  -->
 
- <copyField source="*" dest="search_text"/>
- <copyField source="dspace.entity.type" dest="search.entitytype"/>
- <copyField source="dc.case.type" dest="dc_case_type"/>
- <copyField source="dc.case.number" dest="dc_case_number"/>
- <copyField source="dc.case.year" dest="dc_case_year"/>
- <copyField source="dc.party.firstrespondent" dest="dc_party_firstrespondent"/>
- <copyField source="dc.party.firstpetitioner" dest="dc_party_firstpetitioner"/>
-
- <copyField source="dc.judge.name" dest="dc_judge_name"/>  
- <copyField source="dc.advocate.firstpetitioner" dest="dc_advocate_firstpetitioner"/>
- <copyField source="dc.advocate.firstrespondent" dest="dc_advocate_firstrespondent"/>
- <copyField source="dc.case.district" dest="dc_case_district"/>
+  <copyField source="*" dest="search_text"/>
+  <copyField source="dspace.entity.type" dest="search.entitytype"/>
+  <copyField source="dc.case.type" dest="dc_case_type"/>
+  <copyField source="dc.case.number" dest="dc_case_number"/>
+  <copyField source="dc.case.year" dest="dc_case_year"/>
+  <copyField source="dc.case.disposaldate" dest="dc_case_disposaldate"/>
+  <copyField source="dc.case.scandate" dest="dc_case_scandate"/>
+  <copyField source="dc.case.approveby" dest="dc_case_approveby"/>
+  <copyField source="dc.case.dateverification" dest="dc_case_dateverification"/>
+  <copyField source="dc.case.barcode" dest="dc_case_barcode"/>
+  <copyField source="dc.case.batchnumber" dest="dc_case_batchnumber"/>
+  <copyField source="dc.case.judgename" dest="dc_case_judgename"/>
+  <copyField source="dc.case.filesize" dest="dc_case_filesize"/>
+  <copyField source="dc.case.charcount" dest="dc_case_charcount"/>
+  <copyField source="dc.case.cnrno" dest="dc_case_cnrno"/>
+  <copyField source="dc.case.verify" dest="dc_case_verify"/>
+  <copyField source="dc.party.firstrespondent" dest="dc_party_firstrespondent"/>
+  <copyField source="dc.party.firstpetitioner" dest="dc_party_firstpetitioner"/>
+  <copyField source="dc.judge.name" dest="dc_judge_name"/>  
+  <copyField source="dc.advocate.firstpetitioner" dest="dc_advocate_firstpetitioner"/>
+  <copyField source="dc.advocate.firstrespondent" dest="dc_advocate_firstrespondent"/>
+  <copyField source="dc.case.district" dest="dc_case_district"/>
 
 </schema>

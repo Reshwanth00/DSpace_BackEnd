@@ -246,6 +246,16 @@
                         <ref bean="sortDateIssued" />
                         <ref bean="sortDateAccessioned"/>
                         <ref bean="sortByCaseNumber" />
+                        <ref bean= "sortByCaseType"/>
+                        <ref bean= "sortByCaseYear"/>
+                        <ref bean= "sortByAdvocateFirstrespondent"/>
+                        <ref bean= "sortByAdvocateFirstpetitioner"/>
+                        <ref bean= "sortByFirstrespondent"/>
+                        <ref bean= "sortByFirstpetitioner"/>
+                        <ref bean= "sortByFirstpetitioner"/>
+
+
+                        
                     </list>
                 </property>
             </bean>
@@ -2706,9 +2716,7 @@
         <property name="indexFieldName" value="dc_case_type"/>
         <property name="metadataFields">
             <list>
-                <value>dc.case.number</value>                
                 <value>dc.case.type</value>
-                <value>dc.case.year</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -3462,6 +3470,37 @@
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
+    <bean id="sortByCaseType" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.case.type"/>
+        <property name="type" value="text"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+    <bean id="sortByCaseYear" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.case.year"/>
+        <property name="type" value="text"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+    <bean id="sortByFirstrespondent" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.party.firstrespondent"/>
+        <property name="type" value="text"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+    <bean id="sortByFirstpetitioner" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.party.firstpetitioner"/>
+        <property name="type" value="text"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+    <bean id="sortByAdvocateFirstpetitioner" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.advocate.firstpetitioner"/>
+        <property name="type" value="text"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+    <bean id="sortByAdvocateFirstrespondent" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.advocate.firstrespondent"/>
+        <property name="type" value="text"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
 
     <bean id="sortDateAccessioned" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="metadataField" value="dc.date.accessioned"/>

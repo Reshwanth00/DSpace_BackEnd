@@ -129,3 +129,76 @@ The full license is available in the [LICENSE](LICENSE) file or online at http:/
 DSpace uses third-party libraries which may be distributed under different licenses. Those licenses are listed
 in the [LICENSES_THIRD_PARTY](LICENSES_THIRD_PARTY) file.
 # DSpace_BackEnd
+
+
+
+
+how to setup this Backend in your local
+
+If you are cloning for the first time 
+
+-----|
+     |----main----|----backend (here you need to clone the repo)
+     |            |
+     |            |----root (this is the path where build files will be stored)
+     | 
+     |---servers--|----apache-tomcat
+                  |   
+                  |----solr
+    
+
+
+* create a folder called main (like above folder structure) clone this repo inside backend repo
+
+``` git clone https://github.com/Reshwanth00/DSpace_BackEnd.git . ```
+
+* Now create a new folder name root and copy the absolute path of that to know the path run 
+
+``` pwd # and copy the path ```
+
+* Now go inside dspace/config and open dspace.cfg file and change the line dspace.dir = [ paste the copied path of the root ] 
+
+* Now to compile and build java code we need to use maven to build this
+
+``` mvn clean package  ```
+
+* after build success go inside dspace/target/dspace-installer foler and run ant fresh_install
+
+``` cd dspace/target/dspace-installer  ```
+
+* after build success go to root folder that we need created inside main folder and open terminal inside bin folder and run
+
+``` 
+sudo ./dspace database migrate 
+
+sudo ./dspace registry-loader -metadata ../config/registries/dublin-core-types.xml
+
+```
+
+* now copy the solr files from root/solr and paste them in servers/solr/server/solr/configsets/
+
+* now run solr again from the path servers/solr/bin 
+
+```
+
+sudo ./solr stop -p 8983 -force
+
+
+sudo ./solr start -p 8983 -force
+
+```
+
+
+* now from root/bin run the follwing command
+
+``` sudo ./dspace index-discovery -b ```
+
+* now copy the [server] folder from root/webapps/ and paste them in servers/apache-tomcat/webapps if you found any server folder in the delete that then restart the tomcat server
+
+```
+sudo ./shutdowm.sh
+
+sudo ./startup.sh
+
+```
+
