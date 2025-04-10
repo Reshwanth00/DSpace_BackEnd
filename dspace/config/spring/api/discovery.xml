@@ -475,6 +475,11 @@
                 <property name="metadataFields">
                     <list>
                         <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
+                            <property name="field" value="fulltext"/>
+                            <property name="maxSize" value="250"/>
+                            <property name="snippets" value="2"/>
+                        </bean>
+                        <bean class="org.dspace.discovery.configuration.DiscoveryHitHighlightFieldConfiguration">
                             <property name="field" value="dc.contributor.author"/>
                             <property name="snippets" value="5"/>
                         </bean>
@@ -2716,7 +2721,7 @@
         <property name="indexFieldName" value="dc_case_type"/>
         <property name="metadataFields">
             <list>
-                <value>dc.case.type</value>
+                <value>dc.casetype</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2731,7 +2736,6 @@
             </list>
         </property>
         <property name="facetLimit" value="5"/>
-        <property name="type" value="text"/>
     </bean>
  
 
@@ -2739,7 +2743,7 @@
         <property name="indexFieldName" value="dc_case_year"/>
         <property name="metadataFields">
             <list>
-                <value>dc.case.year</value>
+                <value>dc.caseyear</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2750,7 +2754,7 @@
         <property name="indexFieldName" value="dc_case_district"/>
         <property name="metadataFields">
             <list>
-                <value>dc.case.district</value>
+                <value>dc.district</value>
             </list>
         </property>
         <property name="type" value="text"/>
@@ -2763,8 +2767,8 @@
         <property name="metadataFields">
             <list>
                 <value>dc.case.number</value>                
-                <value>dc.case.type</value>
-                <value>dc.case.year</value>
+                <value>dc.casetype</value>
+                <value>dc.caseyear</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2776,8 +2780,8 @@
         <property name="indexFieldName" value="dc_case_PetitionerRespondent"/>
         <property name="metadataFields">
             <list>
-                <value>dc.party.firstrespondent</value>                
-                <value>dc.party.firstpetitioner</value> 
+                <value>dc.rname</value>                
+                <value>dc.pname</value> 
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2788,7 +2792,7 @@
         <property name="indexFieldName" value="dc_party_firstrespondent"/>
         <property name="metadataFields">
             <list>
-                <value>dc.party.firstrespondent</value>
+                <value>dc.rname</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2800,7 +2804,7 @@
         <property name="indexFieldName" value="dc_party_firstpetitioner"/>
         <property name="metadataFields">
             <list>
-                <value>dc.party.firstpetitioner</value>                
+                <value>dc.pname</value>                
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -3467,36 +3471,36 @@
 
     <bean id="sortByCaseNumber" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="metadataField" value="dc.case.number"/>
-        <property name="type" value="text"/>
+        <property name="type" value="int"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
     <bean id="sortByCaseType" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.case.type"/>
+        <property name="metadataField" value="dc.casetype"/>
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
     <bean id="sortByCaseYear" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.case.year"/>
+        <property name="metadataField" value="dc.caseyear"/>
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
     <bean id="sortByFirstrespondent" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.party.firstrespondent"/>
+        <property name="metadataField" value="dc.rname"/>
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
     <bean id="sortByFirstpetitioner" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.party.firstpetitioner"/>
+        <property name="metadataField" value="dc.pname"/>
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
     <bean id="sortByAdvocateFirstpetitioner" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.advocate.firstpetitioner"/>
+        <property name="metadataField" value="dc.paname"/>
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
     <bean id="sortByAdvocateFirstrespondent" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="dc.advocate.firstrespondent"/>
+        <property name="metadataField" value="dc.raname"/>
         <property name="type" value="text"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
